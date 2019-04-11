@@ -8,7 +8,7 @@
 
 import UIKit
 
-open class Cell: UIView {
+@objc open class Cell: UIView {
     public let contentView = UIView()
 
     public var backgroundView: UIView? {
