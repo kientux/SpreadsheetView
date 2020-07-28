@@ -232,4 +232,8 @@ class ViewController: UIViewController, SpreadsheetViewDataSource, SpreadsheetVi
     func spreadsheetView(_ spreadsheetView: SpreadsheetView, didSelectItemAt indexPath: IndexPath) {
         print("Selected: (row: \(indexPath.row), column: \(indexPath.column))")
     }
+    
+    func spreadsheetViewDidScroll(_ spreadsheetView: SpreadsheetView) {
+        print(spreadsheetView.contentOffset)
+    }
 }

@@ -17,6 +17,8 @@ extension SpreadsheetView: UIScrollViewDelegate {
             rowHeaderView.delegate = self
             columnHeaderView.delegate = self
             tableView.delegate = self
+            
+            delegate?.spreadsheetViewDidScroll(self)
         }
 
         if tableView.contentOffset.x < 0 && !stickyColumnHeader {
