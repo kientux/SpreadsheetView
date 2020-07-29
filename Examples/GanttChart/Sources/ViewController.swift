@@ -92,6 +92,11 @@ class ViewController: UIViewController, SpreadsheetViewDataSource, SpreadsheetVi
 
         spreadsheetView.dataSource = self
         spreadsheetView.delegate = self
+        spreadsheetView.bounces = false
+        
+        spreadsheetView.isFrozenRowShadowEnabled = true
+        spreadsheetView.frozenRowShadowRadius = 8
+        spreadsheetView.frozenRowShadowOpacity = 0.4
 
         let hairline = 1 / UIScreen.main.scale
         spreadsheetView.intercellSpacing = CGSize(width: hairline, height: hairline)

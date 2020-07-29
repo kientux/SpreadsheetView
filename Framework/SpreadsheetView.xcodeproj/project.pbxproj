@@ -48,6 +48,7 @@
 		14CBB7F01EC8AF22005BEEB3 /* CellRangeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CBB7EF1EC8AF22005BEEB3 /* CellRangeTests.swift */; };
 		14EA70931EC198D600AB24EC /* SpreadsheetView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 149E6A691EADE047000D851D /* SpreadsheetView.framework */; };
 		14EA70941EC198D600AB24EC /* SpreadsheetView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 149E6A691EADE047000D851D /* SpreadsheetView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		419D81CA24D186B70066F8E0 /* SpreadsheetView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419D81C924D186B70066F8E0 /* SpreadsheetView+Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +134,7 @@
 		14B2F24F1EC031950014C199 /* Borders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Borders.swift; sourceTree = "<group>"; };
 		14B36C4E1EBF664600730F29 /* Gridlines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gridlines.swift; sourceTree = "<group>"; };
 		14CBB7EF1EC8AF22005BEEB3 /* CellRangeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellRangeTests.swift; sourceTree = "<group>"; };
+		419D81C924D186B70066F8E0 /* SpreadsheetView+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SpreadsheetView+Utils.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +229,7 @@
 				14120FFF1EE1D7A7004E41A3 /* SpreadsheetView+UISnapshotting.swift */,
 				143664C81EB6518600321E5E /* SpreadsheetView+UIScrollView.swift */,
 				143664CE1EB655CA00321E5E /* SpreadsheetView+UIScrollViewDelegate.swift */,
+				419D81C924D186B70066F8E0 /* SpreadsheetView+Utils.swift */,
 				149E6A851EADE0EA000D851D /* SpreadsheetViewDataSource.swift */,
 				149E6A861EADE0EA000D851D /* SpreadsheetViewDelegate.swift */,
 				149E6A871EADE0EA000D851D /* ScrollPosition.swift */,
@@ -441,6 +444,7 @@
 				143664C71EB6509900321E5E /* SpreadsheetView+Touches.swift in Sources */,
 				149E6A931EADE0EA000D851D /* SpreadsheetViewDataSource.swift in Sources */,
 				149E6A9B1EADE0EA000D851D /* Address.swift in Sources */,
+				419D81CA24D186B70066F8E0 /* SpreadsheetView+Utils.swift in Sources */,
 				149E6A9A1EADE0EA000D851D /* Location.swift in Sources */,
 				1451A0721ECEC2AF00C048DF /* SpreadsheetView+UIViewHierarchy.swift in Sources */,
 				14B2F2501EC031950014C199 /* Borders.swift in Sources */,

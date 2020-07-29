@@ -33,6 +33,8 @@ final class ScrollView: UIScrollView, UIGestureRecognizerDelegate {
     var hasDisplayedContent: Bool {
         return columnRecords.count > 0 || rowRecords.count > 0
     }
+    
+    var isDropShadowEnabled: Bool = false
 
     func resetReusableObjects() {
         for cell in visibleCells {
@@ -80,5 +82,13 @@ final class ScrollView: UIScrollView, UIGestureRecognizerDelegate {
             return
         }
         touchesCancelled?(touches, event)
+    }
+    
+    override func layoutSublayers(of layer: CALayer) {
+        super.layoutSublayers(of: layer)
+        
+        if isDropShadowEnabled {
+            layer.shadowPath = UIBezierPath(rect: bounds).cgPath
+        }
     }
 }
