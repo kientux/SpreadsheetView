@@ -50,7 +50,7 @@ public final class CellRange {
 
 extension CellRange: Hashable {
     public func hash(into hasher: inout Hasher) {
-        hasher.combine(from.hashValue)
+        hasher.combine(from)
     }
 
     public static func ==(lhs: CellRange, rhs: CellRange) -> Bool {

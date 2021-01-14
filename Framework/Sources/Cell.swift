@@ -55,15 +55,6 @@ import UIKit
     }
 
     public var gridlines = Gridlines(top: .default, bottom: .default, left: .default, right: .default)
-    @available(*, deprecated, renamed: "gridlines")
-    public var grids: Gridlines {
-        get {
-            return gridlines
-        }
-        set {
-            gridlines = newValue
-        }
-    }
     public var borders = Borders(top: .none, bottom: .none, left: .none, right: .none) {
         didSet {
             hasBorder = borders.top != .none || borders.bottom != .none || borders.left != .none || borders.right != .none
